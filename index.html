@@ -1,0 +1,781 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+.logo img{
+height:70px;
+border-radius:50%;
+    margin-left: 12;
+}
+.logo{
+
+margin-right:10px;
+
+}
+
+
+.header{
+height:15vh;
+width:100%;
+background-color:#383636;
+color:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+position:scroll;
+top:0;
+left:0;
+}
+a{
+text-decoration:none;
+color:white;
+}
+.link ul li{
+list-style:none;
+
+
+
+}
+.link ul li a{
+list-style:none;
+margin-right:40px;
+color:white;
+
+}
+
+
+
+
+.link ul li a:hover{
+border-bottom:2px solid white;
+
+
+
+}
+.link ul{
+display:flex;
+
+}
+.first_part{
+height:90vh;
+background-color:#171616;
+    flex-direction: row-reverse;
+display:flex;
+}
+.image img{
+height:95%;
+width:90%;
+}
+ li{
+list-style:none;
+
+
+
+}
+.hacking_courses{
+
+height:90vh;
+background-color:#171616;
+display:flex;
+ flex-direction: row-reverse;
+}
+.hacking_course{
+
+height:90vh;
+background-color:#171616;
+display:flex;
+ 
+}
+
+span{
+color:2cfd2c;
+font-size:45px;
+    font-family: fantasy;
+}
+.first_text{
+width:50%;
+display:flex;
+align-items:end;
+justify-content:center;
+flex-direction:column;
+color:white;
+padding-left:10px;
+
+}
+.first_text h1{
+font-size:35px;
+padding-left:20px;
+
+}
+.first_text p{
+padding:20px;
+}
+.first_text button{
+height:40px;
+width:120px;
+
+color:gray;
+background:transparent;
+border:none;
+cursor:pointer;
+border:2px solid red;
+transition:0.75s;
+margin-left:20px;
+}
+.first_text button:hover{
+color:white;
+background-color:black;
+border:2px solid green;
+transform: scale(1.1);
+}
+.image{
+width:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+
+
+
+
+.hacking_course_text{
+width:50%;
+height:90vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+.hacking_course_img{
+
+width:50%;
+height:90vh;
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+}
+.hacking_course_img img{
+
+width:90%;
+height:80%;
+} 
+
+
+.hacking_course_text h1{
+color:2cfd2c;
+    font-family: fantasy;
+	border-bottom:4px solid white;
+
+}
+  .hacking_course_text_heading{
+  
+      display: flex;
+    align-content: end;
+    width: 100%;
+	padding:20px;
+
+}
+.hacking_course_text_bottom p{
+color:white;
+
+
+}
+.hacking_course_text_bottom{
+padding:20px;
+
+}
+
+
+
+.hacking_course_text_bottom button{
+height:40px;
+width:120px;
+color:gray;
+background:transparent;
+border:none;
+cursor:pointer;
+border:2px solid red;
+transition:0.75s;
+}
+.hacking_course_text_bottom button:hover{
+color:white;
+background-color:black;
+border:2px solid green;
+transform: scale(1.1);
+}
+.hacking_course_container{
+height:70vh;
+background:#171616;
+display:flex;
+justify-content:space-between;
+ padding:10px;
+}
+.hacking_course_card{
+width:30%;
+height:60%;
+background:#383636;
+
+}
+.card_image{
+width:100%;
+height:100%;
+
+display:flex;
+ 
+    justify-content: center;
+	align-items:center;
+	padding-top:10px;
+}
+.card_image a{
+    text-align: center;
+}
+
+
+.card_image img{
+width:80%;
+height:100%;
+
+}
+.card_data{
+background:#383636;
+color:white;
+padding:10px;
+}
+.book_now h2 {
+color:#b56716;
+font-size:15px;
+}
+.card_data h1 {
+font-size:20px;
+font-family: cursive;
+}
+
+
+
+
+
+.book_now{
+display:flex;
+justify-content:space-between;
+}
+
+.book_now button{ 
+
+height:40px;
+width:120px;
+color:gray;
+background:transparent;
+border:none;
+cursor:pointer;
+border:2px solid blue;
+}
+.book_now button:hover{ 
+color:white;
+background-color:black;
+border:2px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul{
+display:flex;
+flex-direction:column;
+}
+
+.navbar{
+display:none;
+justify-content:space-between;
+position:sticky;
+top:0;
+left:0;
+z-index:6;
+}
+nav{
+position:absolute;
+top:-100vh;
+left:0;
+
+
+width:100%;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background-color:#383636;
+text-align:center;
+transition:0.5s;
+z-index:2;
+/*display:none;*/
+}
+nav li a{
+color:white;
+letter-spacing:2px;
+margin-bottom:29px;
+font-size:27px;
+
+text-decoration:none;
+}
+a{
+text-decoration:none;
+}
+nav li {
+margin-bottom:29px;
+}
+nav li a:hover{
+border-bottom:2px solid white;
+}
+
+
+.navbar i{
+color:white;
+position:absolute;
+    top: 10px;
+    right: 66px;
+
+cursor:pointer
+}
+.navbar{
+width:100%;
+
+background-color:#383636;
+height:60px;
+}
+
+
+nav i{
+color:white;
+position:absolute;
+top:10px;
+right:10px;
+height:74px;
+width:14px;
+cursor:pointer
+
+}
+.logo{
+display:flex;
+  align-items:center;
+}
+
+.logos{
+height:150px;
+width:150px;
+margin:1%;
+}
+.logos img{
+height:50%;
+wiidth:50%;
+border-radius:50%;
+
+}
+
+
+
+
+@media screen and (max-width:1207px){
+
+.navbar{
+display:flex;
+
+}
+.header{
+display:none;
+
+}
+
+.first_part{
+display:block;
+    padding-top: 100;
+	    height: 80vh;
+	
+}
+.image {
+width:100%;
+
+
+}
+.first_text {
+width:100%;
+}
+.hacking_course{
+display:block;
+height: 70vh;
+}
+.hacking_courses{
+display:block;
+height: 70vh;
+}
+
+.hacking_course_img{
+height:50%;
+width:100%;
+}
+.hacking_course_text{
+height: 20%;
+width:100%;
+}
+p{
+
+
+    line-height: 1.4;
+    font-family: arial;
+}
+
+
+.logo{
+    height: 56px;
+    margin-left: 12;
+
+}
+
+.navbar{
+height: 6vh;
+
+}
+
+
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="logo" >
+<img src="./file/1.jpg" alt="logo should be there" />
+</div>
+<div class="link">
+<ul>
+<li><a href="./index.html" >HOME</a></li>
+<li><a href="./file/About.html" >ABOUT US</a></li>
+<li><a href="./file/payment.html" >PAYMENT</a></li>
+<li><a href="./file/contact.html" >CONTACT US</a></li>
+</ul>
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navbar">
+<div class="logos">
+
+<img src="./file/1.jpg" >
+
+
+ 
+</div>
+<nav id="menu">
+<ul>
+<li><a href="./index.html" >HOME</a></li>
+<li><a href="./file/About.html" >ABOUT US</a></li>
+<li><a href="./file/payment.html" >PAYMENT</a></li>
+<li><a href="./file/contact.html" >CONTACT US</a></li>
+
+</ul>
+<i class="fa fa-times fa-4x" aria-hidden="true" onclick="closemenu()"></i>
+</nav>
+<i class="fa fa-bars fa-4x " aria-hidden="true" onclick="openmenu()"></i>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="main">
+<div class="first_part">
+
+
+<div class="image">
+<img src="./file/7.jpg" />
+</div>
+
+
+
+<div class="first_text">
+<h1>Do you want to be<span> Hacker</span> ??</h1>
+<h1>Do you wanna get some <span> Hacking Tool </span> </h1>
+<h1>Or what about<span> Script </span> ??</h1>
+<p>
+You will get everything about hacking tool, course ang script everything. You don't need to go anywhere, That's my promise!
+</p>
+<button><a href="./file/contact.html">CONTACT US</a></button>
+</div>
+
+
+
+
+</div>
+<hr/>
+<hr/>
+<div class="hacking_course" >
+<div class="hacking_course_img">
+<img src="./file/10.jpg" />
+</div>
+<div class="hacking_course_text">
+<div class="hacking_course_text_heading">
+<h1>HACKING COURSE</h1>
+</div>
+<div class="hacking_course_text_bottom">
+
+<p>One of the most in-demand positions in this field is that of an ethical hacker—an IT professional who purposefully penetrates networks and systems to find and fix potential vulnerabilities. If you're looking to put on your “white hat” and infiltrate systems for good, this position can be a great career opportunity.Learn hacking skills online with Cybrary. Cybrary is the world's leading IT and cybersecurity online training network offering in-depth hacking courses, for beginning, intermediate and advanced hackers. This course is for every everyone(beginner, intermediate or advance)who want to be hacker. Here, we have expert who are working for goggle, netflix or facebook security. For starting course please enter below botton</p>
+<button><a href="./file/contact.html">GET START</a></button>
+</div>
+</div>
+</div>
+
+<div class="hacking_course_container">
+
+<div class="hacking_course_card">
+<div class="card_image">
+<a href="#"/>
+<img src="./file/11.jpg" alt="here should be image" />
+</a>
+</div>
+<div class="card_data">
+<h1>Ethical hacking for Begineer </h1>
+<div class="book_now">
+<h2>price: $200</h2>
+<button><a href="./file/contact.html">BOOK NOW</a></button>
+
+</div>
+
+
+
+</div>
+</div>
+
+<div class="hacking_course_card">
+<div class="card_image">
+<a href="#"/>
+<img src="./file/12.jpg" alt="here should be image" />
+</a>
+</div>
+<div class="card_data">
+<h1>Ethical hacking for intermediate</h1>
+<div class="book_now">
+<h2>price: $400</h2>
+<button><a href="./file/contact.html">BOOK NOW</a></button>
+
+</div>
+</div>
+
+</div>
+<div class="hacking_course_card">  
+<div class="card_image">
+<a href="#"/>
+<img src="./file/13.jpg" alt="here should be image" />
+</a>
+</div>
+<div class="card_data">
+<h1>Ethical hacking for Advance</h1>
+<div class="book_now">
+<h2>price: $600</h2>
+<button><a href="./file/contact.html">BOOK NOW</a></button>
+
+</div>
+</div>
+
+
+</div>
+</div>
+<hr/>
+<hr/>
+
+
+
+
+<div class="hacking_tool" >
+
+<div class="hacking_course" >
+
+
+<div class="hacking_course_img">
+<img src="./file/6.jpg" />
+</div>
+
+
+<div class="hacking_course_text">
+<div class="hacking_course_text_heading">
+<h1>HACKING TOOL</h1>
+</div>
+<div class="hacking_course_text_bottom">
+
+<p>
+Hacking Tools are computer programs and scripts that help you find and exploit weaknesses in computer systems, web applications, servers and networks. There is a variety of such tools available on the market. Some of them are open source while others are commercial solution.
+It is legal to use Hacking tools for whitehat hacking purposes. It's important that you take written permission from the target site before you launch a penetration attack. Without a permission any good intented hacking attempt will land you in legal trouble.
+Ethical Hacking Tools
+Nmap (Network Mapper) Used in port scanning, one of the phases in ethical hacking, is the finest hacking tool ever. ...
+Nessus. The next ethical hacking tool on the list is Nessus. ...
+Nikto. ...
+Kismet. ...
+NetStumbler.
+
+
+</p>
+<button><a href="./file/contact.html">GET START</a></button>
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+<hr/>
+<hr/>
+<div class="hacking_script">
+
+<div class="hacking_courses" >  
+<div class="hacking_course_img">
+<img src="./file/9.jpg" />
+</div>
+<div class="hacking_course_text">
+
+<div class="hacking_course_text_heading">
+<h1>HACKING SCRIPT</h1>
+</div>
+<div class="hacking_course_text_bottom">
+
+<p>
+A disparaging term often used to refer less experience malicious hackers who use existing software
+ to launch hacking attacks. Considered less skilled that professional penetration testers, or white hat hackers,
+ script kiddies usually don't understand the inner workings of software and computer networking.
+ Security experts often use JavaScript for developing cross-site scripting hacking programs to mimic the actions
+ of a black-hat hacker. Powerful hacking tools such as
+ Burp Suite also rely on JavaScript code to perform exploitation and detect vulnerabilities in a system.
+
+</p>
+<button><a href="./file/contact.html">GET START</a></button>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+</main>
+<script>
+var menu=document.getElementById("menu");
+function closemenu(){
+menu.style.top="-100vh";
+}
+function openmenu(){
+menu.style.top="0";
+}
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
